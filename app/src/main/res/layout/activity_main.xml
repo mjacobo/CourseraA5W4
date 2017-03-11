@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mj.nounou.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivMABackground"
+        android:background="@drawable/my_app_back"
+        android:contentDescription="@string/emptyString"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/acivBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nounou_banner_1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/acivLogo"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/acivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nounouicon"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/actvLabel"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selection"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/acbButtonBebe"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/acbButtonBebe"
+        android:layout_width="@dimen/maButtonWidth"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/maView1"
+        android:layout_toLeftOf="@id/maView1"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        style="@style/button"
+        android:text="@string/bebeButton"
+        android:textColor="@color/colorPrimaryText"
+        />
+
+    <View
+        android:id="@+id/maView1"
+        android:layout_height="1dp"
+        android:layout_width="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/acbButtonNana"
+        android:layout_width="@dimen/maButtonWidth"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/maView1"
+        android:layout_toEndOf="@id/maView1"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        android:onClick="nanaMonitor"
+        style="@style/button"
+        android:text="@string/nanaButton"
+        android:textColor="@color/colorPrimaryText"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">nouNou</string>
+    <string name="selection">Seleccione su rol</string>
+    <string name="bebeButton">Bebe</string>
+    <string name="nanaButton">Nana</string>
+    <string name="sensLabel">Nivel de sensibilidad</string>
+    <string name="bebeLowLevel">-</string>
+    <string name="bebeHighLevel">+</string>
+    <string name="nanaLabel">Volumen</string>
+    <string name="bebeActName">Bebe</string>
+    <string name="nanaActName">Nana</string>
+    <string name="emptyString"> </string>
+</resources>

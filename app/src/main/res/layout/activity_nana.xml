@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mj.nounou.NanaActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivNanaBackground"
+        android:background="@drawable/my_app_back_act"
+        android:contentDescription="@string/emptyString"
+        />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvNanaActHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nanaButton"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        android:layout_alignParentTop="true"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/acbButtonBebe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:drawableTop="@mipmap/ic_camera"
+        android:layout_above="@+id/actvActNanaVolLevel"
+        android:layout_toStartOf="@+id/nanaControlView1"
+        android:layout_toLeftOf="@id/nanaControlView1"
+        android:layout_marginBottom="@dimen/mainMarginBottom" />
+
+    <View
+        android:id="@+id/nanaControlView1"
+        android:layout_height="1dp"
+        android:layout_width="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/actvActNanaVolLevel"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/acbButtonNana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:drawableTop="@mipmap/ic_mic"
+        android:layout_above="@+id/actvActNanaVolLevel"
+        android:layout_toEndOf="@+id/nanaControlView1"
+        android:layout_toRightOf="@id/nanaControlView1"
+        android:layout_marginBottom="@dimen/mainMarginBottom"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvActNanaVolLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/actvNanaMSign"
+        android:text="@string/nanaLabel"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvNanaMSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/nanaView1"
+        android:layout_toLeftOf="@id/nanaView1"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bebeLowLevel"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        />
+
+    <View
+        android:id="@+id/nanaView1"
+        android:layout_height="1dp"
+        android:layout_width="15dp"
+        android:layout_toStartOf="@+id/acsbNVControl"
+        android:layout_toLeftOf="@id/acsbNVControl"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/acsbNVControl"
+        android:layout_width="@dimen/volumeControlWidth"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        />
+
+    <View
+        android:id="@+id/nanaView2"
+        android:layout_height="1dp"
+        android:layout_width="15dp"
+        android:layout_toRightOf="@+id/acsbNVControl"
+        android:layout_toEndOf="@id/acsbNVControl"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvNanaPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nanaView2"
+        android:layout_toEndOf="@id/nanaView2"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bebeHighLevel"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        />
+
+</RelativeLayout>

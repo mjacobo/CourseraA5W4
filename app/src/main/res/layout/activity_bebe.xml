@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mj.nounou.BebeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivBebeBackground"
+        android:background="@drawable/my_app_back_act"
+        android:contentDescription="@string/emptyString"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvBebeActLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bebeButton"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        />
+
+    <LinearLayout
+        android:id="@+id/llBebe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/actvBebeActLevel"
+        android:layout_above="@+id/actvSensLabel"
+        >
+
+        <VideoView
+            android:id="@+id/vvBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/videoPadding"
+            android:layout_marginLeft="@dimen/videoPadding"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvSensLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/acsbBVControl"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sensLabel"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvBebeMSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/bebeView1"
+        android:layout_toLeftOf="@+id/bebeView1"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bebeLowLevel"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        />
+
+    <View
+        android:id="@+id/bebeView1"
+        android:layout_height="1dp"
+        android:layout_width="15dp"
+        android:layout_toStartOf="@+id/acsbBVControl"
+        android:layout_toLeftOf="@id/acsbBVControl"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/acsbBVControl"
+        android:layout_width="@dimen/volumeControlWidth"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        />
+
+    <View
+        android:id="@+id/bebeView2"
+        android:layout_height="1dp"
+        android:layout_width="15dp"
+        android:layout_toRightOf="@+id/acsbBVControl"
+        android:layout_toEndOf="@id/acsbBVControl"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actvBebePS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bebeView2"
+        android:layout_toEndOf="@id/bebeView2"
+        android:layout_marginBottom="@dimen/mainMarginBottom"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bebeHighLevel"
+        android:textColor="@color/colorLabelText"
+        android:textStyle="bold"
+        android:textSize="@dimen/labelFontSize"
+        />
+
+</RelativeLayout>

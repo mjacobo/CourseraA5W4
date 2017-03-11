@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="labelFontSize">25sp</dimen>
+    <dimen name="layoutTopMargin">8dp</dimen>
+    <dimen name="layoutTopGM">150dp</dimen>
+    <dimen name="topMargin">8dp</dimen>
+    <dimen name="leftMargin">0dp</dimen>
+    <dimen name="maButtonWidth">150dp</dimen>
+    <integer name="bebeWeight">10</integer>
+    <integer name="bebeSec1">1</integer>
+    <integer name="bebeSec2">6</integer>
+    <integer name="bebeSec3">3</integer>
+    <integer name="buttonPannel">2</integer>
+    <integer name="buttonPannelCell">1</integer>
+    <dimen name="layoutHeight">40dp</dimen>
+    <dimen name="videoPadding">10dp</dimen>
+    <dimen name="videoHeight">200dp</dimen>
+    <dimen name="textTopMargin">26dp</dimen>
+    <dimen name="nanaPadding">100dp</dimen>
+    <dimen name="buttonSize">100dp</dimen>
+    <dimen name="nanaButtonMargin">30dp</dimen>
+    <dimen name="mainMarginBottom">25dp</dimen>
+    <dimen name="volumeControlWidth">200dp</dimen>
+</resources>
